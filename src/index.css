@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  /* background: linear-gradient(to bottom, rgba(19, 7, 47, 0.998), #000000, 100%); */
+  /* background: linear-gradient(to bottom, rgba(19, 7, 47, 0.998), #000000 60%, #000000 100%); */
+  overflow: hidden;
+  user-select: none;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* FONT FAMILIES */
+@font-face {
+  font-family: Clash Display ExtraLight;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Extralight.ttf");
+}
+
+@font-face {
+  font-family: Clash Display Light;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Light.ttf");
+}
+
+@font-face {
+  font-family: Clash Display Regular;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: Clash Display Medium;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Medium.ttf");
+}
+
+@font-face {
+  font-family: Clash Display SemiBold;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Semibold.ttf");
+}
+
+@font-face {
+  font-family: Clash Display Bold;
+  src: url("https://xrv-xrc.s3.ap-south-1.amazonaws.com/XRC_Homepage/homepage_contents/ClashDisplay-Bold.ttf");
+}
+
+.ff-xl {
+  font-family: "Clash Display ExtraLight";
+}
+
+.ff-l {
+  font-family: "Clash Display Light";
+}
+
+.ff-l {
+  font-family: "Clash Display Light";
+}
+
+.ff-r {
+  font-family: "Clash Display Regular";
+  letter-spacing: 0.03rem;
+    word-spacing: 0.035rem;
+}
+
+.ff-m {
+  font-family: "Clash Display Medium";
+}
+
+.ff-sb {
+  font-family: "Clash Display SemiBold";
+}
+
+.ff-b {
+  font-family: "Clash Display Bold";
+}
+
+
+/* RESPONSIVE FONT SIZES */
+:root {
+  --font-scale-factor: 1;
+}
+
+.fs-xxs {
+  font-size: calc(0.5rem * var(--font-scale-factor)) !important;
+}
+
+.fs-xs {
+  font-size: calc(0.625rem * var(--font-scale-factor)) !important;
+}
+
+.fs-sm {
+  font-size: calc(0.75rem * var(--font-scale-factor)) !important;
+}
+
+.fs-m {
+  font-size: calc(0.9rem * var(--font-scale-factor)) !important;
+}
+
+.fs-lg {
+  font-size: calc(1.125rem * var(--font-scale-factor)) !important;
+}
+
+.fs-xl {
+  font-size: calc(1.5rem * var(--font-scale-factor)) !important;
+}
+
+.fs-xxl {
+  font-size: calc(2rem * var(--font-scale-factor)) !important;
+}
+
+@media (min-width: 425px) {
+  :root {
+    --font-scale-factor: 1.1;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --font-scale-factor: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-scale-factor: 1.3;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-scale-factor: 1.4;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-scale-factor: 1.5;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --font-scale-factor: 1.55;
+  }
+}
+
+
+
+
+
+/* For WebKit-based browsers such as Chrome and Safari */
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(45, 45, 45, 0.637);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey transparent;
+}
+
+/* For Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
